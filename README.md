@@ -2,7 +2,7 @@
 
 ## 目录 :book:
 
-- [HTML](/tree/master/html)
+- [HTML](/html)
 - [CSS](/tree/master/css)
 - [JavaScript](/tree/master/javascript)
 - [Vue](/tree/master/vue)
