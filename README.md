@@ -5,6 +5,7 @@
 - [HTML](/html)
 - [CSS](/css)
 - [JavaScript](/javascript)
+- [TypeScript](/typescript)
 - [Vue](/vue)
 - [React](/react)
 - [Nodejs](/nodejs)
