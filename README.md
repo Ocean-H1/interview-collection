@@ -1,10 +1,10 @@
-##### 这个仓库分类整理一些前端校招常考的面试题目，也欢迎大家提交 pr 一起维护 :rocket:
+##### 这个仓库分类整理一些前端常考的基础面试题目，也欢迎大家提交 pr 一起维护 :rocket:
 
 ## 目录 :book:
 
 - [HTML](/html)
-- [CSS](/css)
-- [JavaScript](/javascript)
+- [CSS](/css/css.md)
+- [JavaScript](/javascript/JavaScript.md)
 - [TypeScript](/typescript)
 - [Vue](/vue)
 - [React](/react)
