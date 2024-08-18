@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>三栏布局，中间自适应</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* 1. float 浮动 */
+
+    /* .container {
+      overflow: auto;
+    }
+
+    .left {
+      background-color: red;
+      float: left;
+      width: 200px;
+    }
+
+    .right {
+      float: right;
+      background-color: green;
+      width: 150px;
+    }
+
+    .middle {
+      overflow: hidden;
+      padding: 0 150px 0 200px;
+      background-color: aqua;
+    } */
+
+    /* ---------------------------------- */
+    /* 2, flex 弹性布局 */
+
+    /* order属性仅为了复用html结构，请忽略 */
+    /* .container {
+      display: flex;
+      height: 100vh;
+    }
+
+    .left {
+      order: 0;
+      width: 200px;
+      background-color: red;
+    }
+
+    .right {
+      order: 2;
+      width: 150px;
+      background-color: green;
+    }
+
+    .middle {
+      order: 1;
+      background-color: antiquewhite;
+      flex: 1;
+    } */
+
+    /* ---------------------------------- */
+    /* 3. grid布局 */
+    /* grid-area仅用来调整位置，复用之前的html结构，请忽略 */
+    .container {
+      display: grid;
+      height: 100vh;
+      grid-template-columns: 200px auto 150px;
+    }
+
+    .left {
+      background-color: red;
+    }
+
+    .right {
+      background-color: green;
+    }
+
+    .middle {
+      background-color: antiquewhite;
+      grid-area: 1/ 2;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="left">左侧定宽</div>
+    <div class="right">右侧定宽</div>
+    <div class="middle">中间自适应</div>
+  </div>
+</body>
+
+</html>
