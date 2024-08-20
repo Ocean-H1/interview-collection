@@ -14,7 +14,7 @@ Function.prototype.myBind = function (thisArg, ...args) {
     //   return new fn(...args, ...newFnArgs);
     // }
     if (new.target === newFn) {
-      // 处理当bind返回的函数被用作构造函数时的情况
+      // 处理当bind返回的函数被用作构造函数时的情况，而不是单纯的返回函数执行结果
       return new fn(...args, ...newFnArgs);
     }
     return thisArg[key](...args, ...newFnArgs);
