@@ -25,10 +25,10 @@
   - [x] [实现防抖和节流函数](./手写题/防抖和节流函数/)
   - [x] [实现`Function.prototype.bind`方法](./手写题/实现bind/index.js)
   - [x] [实现CSS属性名和驼峰命名的转换](./手写题/propertyTransform/index.ts)
+  - [x] [实现一个`instanceof`方法](./手写题/myInstanceof/index.ts)
   - [ ] 实现一个深拷贝函数
   - [ ] 实现`new`操作符
   - [ ] 实现一个判断数据类型的方法
-  - [ ] 实现一个`instanceof`方法
   - [ ] 实现一个`Promise`
   - [ ] 实现一个数组扁平化的方法
   - [ ] 实现瀑布流布局效果
