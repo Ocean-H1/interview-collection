@@ -1,9 +1,15 @@
 
-- [合并两个有序数组](#合并两个有序数组)
-- [移除元素](#移除元素)
-- [删除有序数组中的重复项](#删除有序数组中的重复项)
-- [删除有序数组中的重复项 II](#删除有序数组中的重复项-ii)
+- [Easy](#easy)
+  - [合并两个有序数组](#合并两个有序数组)
+  - [移除元素](#移除元素)
+  - [删除有序数组中的重复项](#删除有序数组中的重复项)
+  - [删除有序数组中的重复项 II](#删除有序数组中的重复项-ii)
+  - [验证回文串](#验证回文串)
+  - [验证回文串 II](#验证回文串-ii)
+- [Medium](#medium)
+- [Hard](#hard)
 
+## Easy
 ### [合并两个有序数组](https://leetcode.cn/problems/merge-sorted-array/)
 ```ts
 /**
@@ -92,3 +98,64 @@ function removeDuplicates(nums: number[]): number {
     return slow
 };
 ```
+### [验证回文串](https://leetcode.cn/problems/valid-palindrome-ii/)
+```ts
+/**
+ * 双指针
+ * 在原字符串上直接遍历，跳过不满足题意的字符，不需要额外空间
+ * T(n): O(|s|) |s|为字符串的长度 
+ * S(n): O(1)
+ */
+function isPalindrome(s: string): boolean {
+    let p = 0, q = s.length - 1;
+    const isalnum = (c) => {
+        return /[a-z0-9]/.test(c.toLowerCase())
+    }
+    while (p < q) {
+        while (p < q && !isalnum(s[p])) {
+            ++p
+        }
+        while (p < q && !isalnum(s[q])) {
+            --q
+        }
+        if (s[p].toLowerCase() !== s[q].toLowerCase()) {
+            return false
+        }
+        ++p
+        --q
+    }
+    return true;
+};
+```
+
+### [验证回文串 II](https://leetcode.cn/problems/RQku0D/description/)
+```ts
+/**
+ * 双指针
+ * 思路：此题的关键是需判断 删除一个字符的情况。
+ * T(n): O(|s|) |s|为字符串的长度 
+ * S(n): O(1)
+ */
+function validPalindrome(s: string): boolean {
+    const isPalindrome = (s: string, i: number, j: number) => {
+        while (i < j) {
+            if (s[i++] !== s[j--]) {
+                return false
+            }
+        }
+        return true
+    }
+    const len = s.length
+    for (let i = 0, j = len - 1; i < j; i++, j--) {
+        if (s[i] !== s[j]) {
+            // 判断是否为回文字符串时，我们不需要判断整个字符串，因为左指针左边和右指针右边的字符之前已经判断过具有对称性质，所以只需要判断中间的子字符串即可
+            return isPalindrome(s, i + 1, j) || isPalindrome(s, i, j - 1)
+        }
+    }
+    return true
+
+};
+```
+## Medium
+
+## Hard
