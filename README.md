@@ -11,7 +11,7 @@
   - [JavaScript](/面试题/javascript/JavaScript.md)
   - [TypeScript](/面试题/typescript/README.md)
   - [Vue](/面试题/vue/README.md)
-  - [React](/面试题/react/README.md)
+  - [React](/面试题/react/React.md)
   - [Nodejs](/面试题/nodejs/README.md)
   - [项目场景题](/面试题/项目场景题/README.md)
   - [计算机网络](/面试题/计算机网络/README.md)
