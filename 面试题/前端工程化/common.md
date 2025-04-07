@@ -3,6 +3,7 @@
 - [3. 软链接(符号链接)、硬链接分别是什么？](#3-软链接符号链接硬链接分别是什么)
 - [4. 什么是`Monorepo`架构，有哪些实现方案？相对于`Mutilrepo`有哪些优点和缺点？](#4-什么是monorepo架构有哪些实现方案相对于mutilrepo有哪些优点和缺点)
 - [5. Babel转译原理(AST操作)？](#5-babel转译原理ast操作)
+- [6.`package.json`中的常用配置项及其作用?](#6packagejson中的常用配置项及其作用)
 
 ## 1. npm、pnpm、yarn等等这些包管理器特性对比？
 博客：[现代包管理工具总结](https://blog.oceanh.top/posts/frontend/%E7%8E%B0%E4%BB%A3%E5%8C%85%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/)
@@ -27,3 +28,23 @@
 ## 4. 什么是`Monorepo`架构，有哪些实现方案？相对于`Mutilrepo`有哪些优点和缺点？
 
 ## 5. Babel转译原理(AST操作)？
+
+## 6.`package.json`中的常用配置项及其作用?
+| 字段名                | 作用                                 | 示例/值                          | 应用场景                                                                 |
+|-----------------------|--------------------------------------|----------------------------------|--------------------------------------------------------------------------|
+| **`name`**            | 项目唯一名称                         | `"my-package"`                   | 创建或发布包时，必须定义唯一名称                                         |
+| **`version`**         | 项目版本号                           | `"1.0.0"`                        | 版本控制、发布管理，遵循 SemVer 规范                                     |
+| **`description`**     | 项目简要描述                         | `"A web server tool"`            | 在 npm 上展示项目用途，提高可发现性                                      |
+| **`main`**            | 入口文件路径                         | `"dist/index.js"`                | 当其他项目通过 `require` 引用该包时，加载此文件                          |
+| **`scripts`**         | 自定义命令                           | `"start": "node app.js"`         | 定义常用操作（启动、测试、构建），如 `npm run start`                     |
+| **`dependencies`**    | 生产环境依赖                         | `"express": "^4.18.2"`           | 项目运行时必需的库（如 Express、React）                                  |
+| **`devDependencies`** | 开发环境依赖                         | `"jest": "^29.7.0"`              | 开发工具（如 Webpack、ESLint）、测试框架（Jest）                         |
+| **`peerDependencies`**| 宿主环境依赖                         | `"react": ">=18.0.0"`            | 开发插件或库时，要求宿主环境必须安装指定版本（如 React 组件库）          |
+| **`repository`**      | 代码仓库地址                         | `"type": "git", "url": "..."`    | 开源项目协作，方便他人查看或贡献代码                                     |
+| **`license`**         | 开源许可证类型                       | `"MIT"`                          | 明确项目使用权限（如 MIT、Apache-2.0）                                   |
+| **`private`**         | 禁止发布到 npm                       | `true`                           | 企业内部项目或私有项目，避免误发布                                       |
+| **`files`**           | 发布到 npm 的文件白名单              | `["dist", "README.md"]`          | 控制包体积，排除测试文件、源码等无关内容                                 |
+| **`engines`**         | 环境版本要求                         | `"node": ">=18.0.0"`             | 确保用户使用兼容的 Node.js 或 npm 版本                                   |
+| **`type`**            | 模块类型                             | `"module"`                       | 使用 ES6 模块语法（`import/export`）时需指定                             |
+| **`bin`**             | 全局可执行命令                       | `{"my-cli": "./bin/cli.js"}`     | 开发 CLI 工具时，定义可执行命令（如 `vue-cli`）                          |
+| **`browserslist`**    | 目标浏览器范围                       | `"> 1%", "last 2 versions"`      | 前端工程中，Babel 或 Autoprefixer 根据此配置自动降级代码                 |
