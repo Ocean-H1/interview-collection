@@ -32,6 +32,7 @@
   - [x] [实现`new`操作符](./手写题/实现new操作符/index.ts)
   - [x] [实现一个深拷贝函数](./手写题/deepClone/index.ts)
   - [x] [实现一个数组扁平化](./手写题/数组扁平化/index.ts)
+  - [x] [统计页面出现次数最多的HTML标签](./手写题/getMostFrequentTag/index.ts)
   - [ ] JS实现数组转树型结构
   - [ ] 实现一个判断数据类型的方法
   - [ ] 实现一个`Promise`
