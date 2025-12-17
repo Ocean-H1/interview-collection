@@ -35,6 +35,9 @@
   - [x] [实现一个深拷贝函数](./手写题/deepClone/index.ts)
   - [x] [实现一个数组扁平化](./手写题/数组扁平化/index.ts)
   - [x] [统计页面出现次数最多的 HTML 标签](./手写题/getMostFrequentTag/index.ts)
+  - [x] [`undefined`转`null`](./手写题/UndefinedToNull.ts)
+  - [x] [求两个数组的交集](./手写题/GetIntersection.ts)
+  - [x] [找出只出现一次的元素](./手写题/FindSingle.ts)
   - [ ] JS 实现数组转树型结构
   - [ ] 实现一个判断数据类型的方法
   - [ ] 实现一个`Promise`
