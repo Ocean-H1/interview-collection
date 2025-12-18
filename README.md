@@ -38,6 +38,8 @@
   - [x] [`undefined`转`null`](./手写题/UndefinedToNull.ts)
   - [x] [求两个数组的交集](./手写题/GetIntersection.ts)
   - [x] [找出只出现一次的元素](./手写题/FindSingle.ts)
+  - [x] [整数转罗马](./手写题/IntegerToRoman.ts)
+  - [x] [将基于回调的函数转换为基于 Promise 的函数](./手写题/Promisify.js)
   - [ ] JS 实现数组转树型结构
   - [ ] 实现一个判断数据类型的方法
   - [ ] 实现一个`Promise`
