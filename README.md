@@ -7,40 +7,40 @@
 ## 目录 :book:（持续更新中~）
 
 - **经典面试题目分类**
-  - [HTML](/面试题/html/README.md)
-  - [CSS](/面试题/css/css.md)
-  - [JavaScript](/面试题/javascript/JavaScript.md)
-  - [TypeScript](/面试题/typescript/README.md)
-  - [Vue](/面试题/vue/README.md)
-  - [React](/面试题/react/React.md)
-  - [Nodejs](/面试题/nodejs/README.md)
-  - [项目场景题](/面试题/项目场景题/README.md)
-  - [计算机网络](/面试题/计算机网络/README.md)
-  - [操作系统](/面试题/操作系统/README.md)
-  - [数据库](/面试题/数据库/README.md)
+  - [HTML](/interview/html/README.md)
+  - [CSS](/interview/css/css.md)
+  - [JavaScript](/interview/javascript/JavaScript.md)
+  - [TypeScript](/interview/typescript/README.md)
+  - [Vue](/interview/vue/README.md)
+  - [React](/interview/react/React.md)
+  - [Nodejs](/interview/nodejs/README.md)
+  - [项目场景题](/interview/项目场景题/README.md)
+  - [计算机网络](/interview/计算机网络/README.md)
+  - [操作系统](/interview/操作系统/README.md)
+  - [数据库](/interview/数据库/README.md)
   - 前端模块化相关
-    - [Webpack](./面试题/前端工程化/webpack.md)
-    - [Vite](./面试题/前端工程化/vite.md)
-    - [其他](./面试题/前端工程化/common.md)
-  - [浏览器相关](/面试题/浏览器相关/README.md)
+    - [Webpack](./interview/前端工程化/webpack.md)
+    - [Vite](./interview/前端工程化/vite.md)
+    - [其他](./interview/前端工程化/common.md)
+  - [浏览器相关](/interview/浏览器相关/README.md)
 - **经典手写题目**
-  - [x] [实现一个`AsyncTaskQueue`, 用于管理异步任务的执行，并指定最大并发限制](./手写题/AsyncTaskQueue.ts)
-  - [x] [实现一个红绿灯组件](./手写题/traffic-light/index.html)
-  - [x] [CSS 中的常见布局模式](./手写题/常见布局/)
-  - [x] [实现防抖和节流函数](./手写题/防抖和节流函数/)
-  - [x] [实现`Function.prototype.bind`方法](./手写题/实现bind/index.js)
-  - [x] [实现 CSS 属性名和驼峰命名的转换](./手写题/propertyTransform/index.ts)
-  - [x] [实现一个`instanceof`方法](./手写题/myInstanceof/index.ts)
-  - [x] [实现`new`操作符](./手写题/实现new操作符/index.ts)
-  - [x] [实现一个深拷贝函数](./手写题/deepClone/index.ts)
-  - [x] [实现一个数组扁平化](./手写题/数组扁平化/index.ts)
-  - [x] [统计页面出现次数最多的 HTML 标签](./手写题/getMostFrequentTag/index.ts)
-  - [x] [`undefined`转`null`](./手写题/UndefinedToNull.ts)
-  - [x] [求两个数组的交集](./手写题/GetIntersection.ts)
-  - [x] [找出只出现一次的元素](./手写题/FindSingle.ts)
-  - [x] [整数转罗马](./手写题/IntegerToRoman.ts)
-  - [x] [将基于回调的函数转换为基于 Promise 的函数](./手写题/Promisify.js)
-  - [x] [实现版本号的比较](./手写题/CompareVersion.ts)
+  - [x] [实现一个`AsyncTaskQueue`, 用于管理异步任务的执行，并指定最大并发限制](./code/AsyncTaskQueue.ts)
+  - [x] [实现一个红绿灯组件](./code/traffic-light/index.html)
+  - [x] [CSS 中的常见布局模式](./code/常见布局/)
+  - [x] [实现防抖和节流函数](./code/防抖和节流函数/)
+  - [x] [实现`Function.prototype.bind`方法](./code/实现bind/index.js)
+  - [x] [实现 CSS 属性名和驼峰命名的转换](./code/propertyTransform/index.ts)
+  - [x] [实现一个`instanceof`方法](./code/myInstanceof/index.ts)
+  - [x] [实现`new`操作符](./code/实现new操作符/index.ts)
+  - [x] [实现一个深拷贝函数](./code/deepClone/index.ts)
+  - [x] [实现一个数组扁平化](./code/数组扁平化/index.ts)
+  - [x] [统计页面出现次数最多的 HTML 标签](./code/getMostFrequentTag/index.ts)
+  - [x] [`undefined`转`null`](./code/UndefinedToNull.ts)
+  - [x] [求两个数组的交集](./code/GetIntersection.ts)
+  - [x] [找出只出现一次的元素](./code/FindSingle.ts)
+  - [x] [整数转罗马](./code/IntegerToRoman.ts)
+  - [x] [将基于回调的函数转换为基于 Promise 的函数](./code/Promisify.js)
+  - [x] [实现版本号的比较](./code/CompareVersion.ts)
   - [ ] JS 实现数组转树型结构
   - [ ] 实现一个判断数据类型的方法
   - [ ] 实现一个`Promise`
@@ -48,17 +48,17 @@
   - [ ] 实现瀑布流布局效果
 - **经典算法题目分类**（**注：题目均来源于 LeetCode/牛客网，题解思路非标准，仅供参考**）
   - **算法思想分类**：
-    - [双指针](./数据结构与算法/TwoPointers.md)
+    - [双指针](./al/TwoPointers.md)
     - [二分查找]
-    - [贪心](./数据结构与算法/greedy.md)
-    - [排序](./数据结构与算法/sort.md)
+    - [贪心](./al/greedy.md)
+    - [排序](./al/sort.md)
     - [搜索]
     - [动态规划]
   * **数据结构分类**：
-    - [链表](./数据结构与算法/LinkedList.md)
+    - [链表](./al/LinkedList.md)
     - [树]
-    - [栈和队列](./数据结构与算法/stack&queue.md)
-    - [哈希表](./数据结构与算法/HashMap.md)
+    - [栈和队列](./al/stack&queue.md)
+    - [哈希表](./al/HashMap.md)
     - [字符串]
     - [数组与矩阵]
     - [位运算]

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Traffic Light</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="traffic-light">
+    <div class="light-container">
+      <div class="green light"></div>
+      <div class="yellow light"></div>
+      <div class="red light"></div>
+    </div>
+    <div class="time-container">90</div>
+  </div>
+
+  <script type="module">
+    import TrafficLight from './traffic-light.js';
+
+    const light = new TrafficLight([
+      {
+        color: 'green',
+        duration: 5
+      },
+      {
+        color: 'yellow',
+        duration: 2
+      },
+      {
+        color: 'red',
+        duration: 5
+      }
+    ]);
+
+    const lightContainer = document.querySelector('.light-container');
+    const timeContainer = document.querySelector('.time-container');
+    function update() {
+      const current = light.getCurrentLight();
+      lightContainer.className = `light-container ${current.color}`;
+      timeContainer.textContent = Math.ceil(current.remain);
+    }
+
+    function start() {
+      requestAnimationFrame(() => {
+        start();
+        update();
+      });
+    }
+    start()
+  </script>
+</body>
+
+</html>
