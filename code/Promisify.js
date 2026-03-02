@@ -4,7 +4,7 @@
  * @Date: 2025-12-18 11:23:28
  */
 function promisify(func) {
-  return function(...args) {
+  return function (...args) {
     return new Promise((resolve, reject) => {
       func.apply(this, [...args, (err, data) => {
         if (err) {

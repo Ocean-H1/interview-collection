@@ -41,6 +41,7 @@
   - [x] [整数转罗马](./code/IntegerToRoman.ts)
   - [x] [将基于回调的函数转换为基于 Promise 的函数](./code/Promisify.js)
   - [x] [实现版本号的比较](./code/CompareVersion.ts)
+  - [x] [有关异步代码输出顺序判断问题](./code/EventLoop/1.js)
   - [ ] JS 实现数组转树型结构
   - [ ] 实现一个判断数据类型的方法
   - [ ] 实现一个`Promise`

@@ -40,13 +40,13 @@ class AsyncTaskQueue {
 }
 
 // Example usage:
-const taskQueue = new AsyncTaskQueue(2); // 最大并发数为2
+const taskQueue = new AsyncTaskQueue(2);
 
 const task1 = () =>
   new Promise((resolve) => setTimeout(() => resolve("Task 1 done"), 1000));
 const task2 = () =>
   new Promise((resolve, reject) =>
-    setTimeout(() => reject("Task 2 failed"), 500)
+    setTimeout(() => reject("Task 2 failed"), 500),
   );
 const task3 = () =>
   new Promise((resolve) => setTimeout(() => resolve("Task 3 done"), 200));
@@ -54,7 +54,7 @@ const task4 = () =>
   new Promise((resolve) => setTimeout(() => resolve("Task 4 done"), 300));
 const task5 = () =>
   new Promise((resolve, reject) =>
-    setTimeout(() => reject("Task 5 failed"), 400)
+    setTimeout(() => reject("Task 5 failed"), 400),
   );
 const task6 = () =>
   new Promise((resolve) => setTimeout(() => resolve("Task 6 done"), 600));
