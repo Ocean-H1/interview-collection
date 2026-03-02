@@ -30,4 +30,4 @@ sum(3, 4);
 asyncSum(3, 4);
 console.log("H");
 
-// 输出顺序：D H C F E G A
+// 输出顺序：D F H C E G A B
