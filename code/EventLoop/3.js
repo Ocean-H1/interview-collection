@@ -24,4 +24,5 @@ Promise.resolve()
     console.log(6);
   });
 
-// 输出顺序：0 1 2 3 4 5 6
+// 输出顺序：0 1 2 4 3 5 6 (不同环境的Promise实现规范不同，可能略有差异，此处为标准promise/A+规范)
+// 解析：触发了PromiseResolveThenableJob，详情见：./tips.md
