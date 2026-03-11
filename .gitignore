@@ -1,5 +1,4 @@
 # AI Agent / Coding Assistant Files
-
 # OpenCode
 .opencode/
 
@@ -19,3 +18,4 @@
 
 # Other AI assistants
 *.ai
+AGENTS.md
