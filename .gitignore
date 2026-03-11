@@ -1,0 +1,21 @@
+# AI Agent / Coding Assistant Files
+
+# OpenCode
+.opencode/
+
+# Claude
+.claude/
+
+# Cursor
+.cursor/
+.cursorrules
+
+# GitHub Copilot
+.github/copilot-instructions.md
+
+# Aider
+.aider*
+.aider-history*
+
+# Other AI assistants
+*.ai
