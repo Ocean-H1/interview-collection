@@ -1,3 +1,5 @@
+// process.nextTick() 是 Node.js 中优先级最高的异步回调，它插队到当前阶段的最后、下一个阶段的最前执行
+
 var flag = false;
 
 Promise.resolve().then(() => {

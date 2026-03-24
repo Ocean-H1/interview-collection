@@ -43,6 +43,7 @@
   - [x] [实现版本号的比较](./code/CompareVersion.ts)
   - [x] [有关异步代码输出顺序判断问题](./code/EventLoop/1.js)
   - [x] [使用Generator模拟Async/Await](./code/AsyncSimulate/asyncSimulate.js)
+  - [x] [实现一个Object.deepFreeze深冻结方法](./code/DeepFreeze.js)
   - [ ] JS 实现数组转树型结构
   - [ ] 实现一个判断数据类型的方法
   - [ ] 实现一个`Promise`
